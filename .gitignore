@@ -19,3 +19,6 @@ keystore.properties
 *.apk
 *.aab
 captures/
+
+# ...but DO ship the published installable APK from dist/
+!dist/*.apk

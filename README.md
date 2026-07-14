@@ -12,6 +12,18 @@ stores no credentials, and **cannot go online** — it does not even request the
 
 ---
 
+## 📥 Download & install
+
+Grab the signed APK from [`dist/OruBar-Pay-v1.0.0.apk`](dist/OruBar-Pay-v1.0.0.apk)
+(1.6 MB), copy it to your phone (WhatsApp / Drive / Bluetooth / cable), tap it,
+allow "install from unknown sources", and install.
+
+- **SHA-256:** `07c071a1fb3ad06d38f97fb4589a8a588b7ac0ed082338d4ca91829e616d6b4f`
+  (also in `dist/OruBar-Pay-v1.0.0.apk.sha256` — verify before installing).
+- A `-debug` APK is also included for development.
+
+---
+
 ## Why it's different (security)
 
 - **Nothing to steal.** No server, no accounts, no cloud database. The whole
