@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">OruBar Pay</string>
+    <string name="app_tagline">Scan · Dial · Done — works with no internet</string>
+
+    <!-- Main screen -->
+    <string name="main_scan_pay">Scan &amp; Pay</string>
+    <string name="main_scan_hint">Point at any UPI QR code</string>
+    <string name="main_history">History</string>
+    <string name="main_help">Help</string>
+    <string name="main_privacy_badge">Your data never leaves this phone</string>
+    <string name="main_offline_badge">No internet needed · No UPI PIN in this app</string>
+
+    <!-- Onboarding -->
+    <string name="onboard_title">How OruBar Pay works</string>
+    <string name="onboard_step1">1. Scan the shop\'s UPI QR with your camera.</string>
+    <string name="onboard_step2">2. Check the name and amount on the big screen.</string>
+    <string name="onboard_step3">3. Tap Pay — your phone dialer opens *99#.</string>
+    <string name="onboard_step4">4. Follow the steps and enter your UPI PIN in your bank\'s screen.</string>
+    <string name="onboard_note">This app never sees your UPI PIN. Payment happens on your bank\'s secure *99# service.</string>
+    <string name="onboard_get_started">Get started</string>
+
+    <!-- Scanner -->
+    <string name="scan_title">Scan UPI QR</string>
+    <string name="scan_prompt">Hold the QR code inside the box</string>
+    <string name="scan_torch_on">Turn on torch</string>
+    <string name="scan_torch_off">Turn off torch</string>
+    <string name="scan_permission_needed">Camera permission is needed to scan QR codes.</string>
+    <string name="scan_permission_grant">Grant permission</string>
+    <string name="scan_permission_denied">Camera was not allowed. Enable it in Settings to scan.</string>
+    <string name="scan_enter_manually">Enter UPI ID manually</string>
+
+    <!-- Confirm -->
+    <string name="confirm_title">Check &amp; Pay</string>
+    <string name="confirm_paying_to">Paying to</string>
+    <string name="confirm_upi_id">UPI ID</string>
+    <string name="confirm_amount">Amount</string>
+    <string name="confirm_enter_amount">Enter amount (₹)</string>
+    <string name="confirm_amount_hint">e.g. 250</string>
+    <string name="confirm_no_name">(No name in QR)</string>
+    <string name="confirm_pay_button">Pay via *99#</string>
+    <string name="confirm_rupee">₹%1$s</string>
+    <string name="confirm_spoof_warning">The name and UPI ID look different. Make sure you know this shop before paying.</string>
+    <string name="confirm_first_seen">First time paying this UPI ID. Confirm it belongs to the right shop.</string>
+    <string name="confirm_seen_before">You have paid this UPI ID before.</string>
+    <string name="confirm_cap_note">*99# allows up to ₹5,000 per payment.</string>
+
+    <!-- Parser error messages -->
+    <string name="err_malformed">This is not a valid QR code.</string>
+    <string name="err_not_upi">This is not a UPI QR code.</string>
+    <string name="err_missing_vpa">This QR has no UPI ID.</string>
+    <string name="err_invalid_vpa">The UPI ID in this QR is not valid.</string>
+    <string name="err_invalid_amount">The amount in this QR is not valid.</string>
+    <string name="err_amount_over_cap">This amount is above the ₹5,000 *99# limit. Pay a smaller amount.</string>
+    <string name="err_unsupported_currency">Only Indian Rupee (INR) payments are supported.</string>
+    <string name="err_enter_valid_amount">Enter a valid amount between ₹1 and ₹5,000.</string>
+
+    <!-- Cheat card -->
+    <string name="cheat_title">Follow these steps</string>
+    <string name="cheat_intro">Your dialer will open *99#. Do this:</string>
+    <string name="cheat_step_send">1. Choose "Send Money"</string>
+    <string name="cheat_step_type">2. Choose "UPI ID", then type:</string>
+    <string name="cheat_step_amount">3. Enter amount:</string>
+    <string name="cheat_step_pin">4. Enter your UPI PIN to finish</string>
+    <string name="cheat_copy_vpa">Copy UPI ID</string>
+    <string name="cheat_copy_amount">Copy amount</string>
+    <string name="cheat_copied">Copied — you can paste it in the *99# box</string>
+    <string name="cheat_open_dialer">Open *99# dialer</string>
+    <string name="cheat_dualsim_hint">You have two SIMs. In the dialer, pick the SIM linked to your bank account.</string>
+    <string name="cheat_no_dialer">No phone dialer found on this device.</string>
+    <string name="cheat_done">I have paid</string>
+    <string name="cheat_after_note">After you finish, your bank sends an SMS confirmation. OruBar Pay never sees your PIN.</string>
+
+    <!-- History -->
+    <string name="history_title">Payment history</string>
+    <string name="history_empty">No payments yet. Your history stays only on this phone.</string>
+    <string name="history_initiated">Started</string>
+    <string name="history_clear">Clear history</string>
+    <string name="history_cleared">History cleared</string>
+    <string name="history_local_note">Stored on this phone only — UPI ID, amount and time. No PIN, no account number.</string>
+
+    <!-- Help -->
+    <string name="help_title">Help &amp; troubleshooting</string>
+    <string name="help_what_title">What is OruBar Pay?</string>
+    <string name="help_what_body">It reads a shop\'s UPI QR code and opens your phone\'s *99# service so you can pay with no internet. The payment happens on your bank\'s secure service — this app only helps you get there.</string>
+    <string name="help_fail_title">The *99# payment did not work?</string>
+    <string name="help_fail_body">OruBar Pay hands over to your bank\'s *99# service. If it fails: check you used the SIM linked to your bank, that you have basic mobile signal, and that your bank supports *99#. Try again after a moment.</string>
+    <string name="help_sim_title">Two SIM cards?</string>
+    <string name="help_sim_body">*99# only works from the SIM number that is registered with your bank. When the dialer asks which SIM, choose that one.</string>
+    <string name="help_carrier_title">Notes by network</string>
+    <string name="help_carrier_jio">Jio: use the SIM registered with your bank; *99# works over the mobile network, no data needed.</string>
+    <string name="help_carrier_airtel">Airtel: dial *99# and follow the menu; works at low signal.</string>
+    <string name="help_carrier_vi">Vi (Vodafone Idea): dial *99#; if it times out, wait and retry.</string>
+    <string name="help_carrier_bsnl">BSNL: reliable for *99# even at one bar of signal.</string>
+    <string name="help_pin_title">Is my UPI PIN safe?</string>
+    <string name="help_pin_body">Yes. You enter your UPI PIN inside your bank\'s *99# screen, never inside OruBar Pay. This app has no PIN box and cannot go online.</string>
+    <string name="help_support">Support: orubar@arivanandhan.in</string>
+
+    <!-- Common -->
+    <string name="action_back">Back</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ok">OK</string>
+    <string name="action_scan_again">Scan again</string>
+</resources>

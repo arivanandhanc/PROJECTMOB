@@ -1,0 +1,9 @@
+# Normalize line endings; keep shell/wrapper scripts LF, batch files CRLF.
+* text=auto eol=lf
+*.bat text eol=crlf
+gradlew text eol=lf
+*.jar binary
+*.png binary
+*.apk binary
+*.jks binary
+*.keystore binary

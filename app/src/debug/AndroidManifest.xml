@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  DEBUG-ONLY overlay. Makes ConfirmActivity launchable via `adb am start` so the
+  trust screen can be screenshotted / manually driven during development. This
+  merges ONLY into debug builds — the release manifest keeps ConfirmActivity
+  android:exported="false".
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <application>
+        <activity
+            android:name=".ui.ConfirmActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+    </application>
+</manifest>

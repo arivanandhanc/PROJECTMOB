@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/cheat_title"
+            android:textColor="@color/ink"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/cheat_intro"
+            android:textColor="@color/ink_soft"
+            android:textSize="16sp" />
+
+        <!-- Dual-SIM hint -->
+        <TextView
+            android:id="@+id/dualSimHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="14dp"
+            android:background="@color/warn_bg"
+            android:textColor="@color/warn_ink"
+            android:textSize="15sp"
+            android:text="@string/cheat_dualsim_hint"
+            android:visibility="gone" />
+
+        <!-- Steps -->
+        <TextView style="@style/Text.OruBar.Value"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:textSize="19sp"
+            android:text="@string/cheat_step_send" />
+
+        <TextView style="@style/Text.OruBar.Value"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:textSize="19sp"
+            android:text="@string/cheat_step_type" />
+
+        <TextView
+            android:id="@+id/vpaValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:padding="12dp"
+            android:background="@color/paper_dim"
+            android:textColor="@color/green_dark"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textIsSelectable="true" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCopyVpa"
+            style="@style/Widget.OruBar.SecondaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/cheat_copy_vpa" />
+
+        <TextView style="@style/Text.OruBar.Value"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:textSize="19sp"
+            android:text="@string/cheat_step_amount" />
+
+        <TextView
+            android:id="@+id/amountValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:padding="12dp"
+            android:background="@color/paper_dim"
+            android:textColor="@color/green_dark"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCopyAmount"
+            style="@style/Widget.OruBar.SecondaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/cheat_copy_amount" />
+
+        <TextView style="@style/Text.OruBar.Value"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:textSize="19sp"
+            android:text="@string/cheat_step_pin" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpenDialer"
+            style="@style/Widget.OruBar.BigButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/cheat_open_dialer" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="14dp"
+            android:background="@color/green_light"
+            android:text="@string/cheat_after_note"
+            android:textColor="@color/green_dark"
+            android:textSize="14sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDone"
+            style="@style/Widget.OruBar.SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/cheat_done" />
+    </LinearLayout>
+</ScrollView>

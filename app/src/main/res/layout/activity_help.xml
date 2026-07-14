@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="@string/help_title"
+            android:textColor="@color/ink" android:textSize="26sp" android:textStyle="bold" />
+
+        <TextView style="@style/Text.OruBar.Value" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="24dp"
+            android:text="@string/help_what_title" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:text="@string/help_what_body"
+            android:textColor="@color/ink_soft" android:textSize="16sp" />
+
+        <TextView style="@style/Text.OruBar.Value" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="24dp"
+            android:text="@string/help_pin_title" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:text="@string/help_pin_body"
+            android:textColor="@color/ink_soft" android:textSize="16sp" />
+
+        <TextView style="@style/Text.OruBar.Value" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="24dp"
+            android:text="@string/help_fail_title" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:text="@string/help_fail_body"
+            android:textColor="@color/ink_soft" android:textSize="16sp" />
+
+        <TextView style="@style/Text.OruBar.Value" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="24dp"
+            android:text="@string/help_sim_title" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:text="@string/help_sim_body"
+            android:textColor="@color/ink_soft" android:textSize="16sp" />
+
+        <TextView style="@style/Text.OruBar.Value" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="24dp"
+            android:text="@string/help_carrier_title" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="@string/help_carrier_jio"
+            android:textColor="@color/ink_soft" android:textSize="16sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="@string/help_carrier_airtel"
+            android:textColor="@color/ink_soft" android:textSize="16sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="@string/help_carrier_vi"
+            android:textColor="@color/ink_soft" android:textSize="16sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="@string/help_carrier_bsnl"
+            android:textColor="@color/ink_soft" android:textSize="16sp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="32dp" android:text="@string/help_support"
+            android:textColor="@color/green_dark" android:textSize="15sp"
+            android:textStyle="bold" android:textIsSelectable="true" />
+    </LinearLayout>
+</ScrollView>

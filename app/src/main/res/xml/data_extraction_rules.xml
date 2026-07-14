@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 12+ backup/transfer rules. History never leaves the device. -->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="file" path="orubar_history.json" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="file" path="orubar_history.json" />
+    </device-transfer>
+</data-extraction-rules>

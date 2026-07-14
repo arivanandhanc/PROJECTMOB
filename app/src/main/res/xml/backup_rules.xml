@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Exclude the local transaction log from cloud backup. History stays on the
+  device only (blueprint §4.4) — it must not travel to Google's servers.
+-->
+<full-backup-content>
+    <exclude domain="file" path="orubar_history.json" />
+</full-backup-content>

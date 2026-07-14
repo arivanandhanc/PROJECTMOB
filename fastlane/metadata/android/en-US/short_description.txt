@@ -1,0 +1,1 @@
+Scan any payment QR and pay via *99# — works with no internet, on any phone.

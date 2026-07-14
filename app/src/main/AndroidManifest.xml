@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      OruBar Pay requests exactly ONE permission: CAMERA (to scan QR codes).
+      There is intentionally NO INTERNET permission — the OS itself then blocks
+      any network call, making the "zero-network" claim verifiable in airplane
+      mode (blueprint §4.3, §5.6). No SMS, no CALL_PHONE, no phone-state reads.
+    -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <!--
+      Android 11+ package visibility: declare that we look up a dialer for the
+      *99# ACTION_DIAL intent, so resolveActivity() can see it. Without this,
+      canDial() could wrongly report "no dialer" on API 30+.
+    -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+            <data android:scheme="tel" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OruBar">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.OnboardingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.ScannerActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.ConfirmActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.CheatCardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.HistoryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.HelpActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
