@@ -27,6 +27,32 @@
             android:textColor="@color/ink_soft"
             android:textSize="16sp" />
 
+        <!-- ===== Auto-pay (opt-in) ===== -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAutoPay"
+            style="@style/Widget.OruBar.BigButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/cheat_autopay_button" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/cheat_autopay_note"
+            android:textColor="@color/ink_soft"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/cheat_or_manual"
+            android:textColor="@color/ink"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
         <!-- Dual-SIM hint -->
         <TextView
             android:id="@+id/dualSimHint"

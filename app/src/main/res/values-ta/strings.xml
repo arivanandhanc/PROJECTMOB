@@ -51,6 +51,17 @@
     <string name="err_unsupported_currency">இந்திய ரூபாய் (INR) பரிவர்த்தனைகள் மட்டுமே ஆதரிக்கப்படுகின்றன.</string>
     <string name="err_enter_valid_amount">₹1 முதல் ₹5,000 வரை சரியான தொகையை உள்ளிடுங்கள்.</string>
 
+    <string name="cheat_autopay_button">தானாகச் செலுத்து</string>
+    <string name="cheat_autopay_note">ஆப் *99#-ஐ டயல் செய்து படிகளை நிரப்புகிறது. நீங்கள் உங்கள் UPI PIN-ஐ மட்டும் உள்ளிடுங்கள்.</string>
+    <string name="cheat_or_manual">அல்லது படிப்படியாகச் செய்யுங்கள்:</string>
+    <string name="autopay_call_denied">ஃபோன் அனுமதி இல்லாமல், கீழே உள்ள படிகளைப் பயன்படுத்துங்கள்.</string>
+    <string name="autopay_need_a11y_title">தானாக நிரப்புதலை இயக்கு</string>
+    <string name="autopay_need_a11y_body">*99# படிகளை நிரப்ப, அணுகல்தன்மை (Accessibility) அமைப்புகளில் \"OruBar Pay\"-ஐ இயக்கவும். இது நீங்கள் செலுத்தும்போது மட்டுமே வேலை செய்கிறது, உங்கள் UPI PIN-ஐ ஒருபோதும் பார்க்காது.</string>
+    <string name="autopay_open_settings">அமைப்புகளைத் திற</string>
+    <string name="autopay_starting">*99# டயல் செய்து படிகளை நிரப்புகிறது… கேட்கும்போது உங்கள் UPI PIN-ஐ உள்ளிடுங்கள்.</string>
+    <string name="a11y_service_desc">OruBar Pay இதை நீங்கள் செலுத்தும்போது மட்டுமே பயன்படுத்துகிறது: இது Send Money-ஐத் தேர்வு செய்து, UPI ID-ஐத் தேர்ந்தெடுத்து, கடையின் UPI ID மற்றும் தொகையை *99# மெனுவில் தட்டச்சு செய்கிறது. இது உங்கள் UPI PIN-ஐ ஒருபோதும் தொடாது, ஆப்பிற்கு இணையம் இல்லை, எனவே எதுவும் உங்கள் ஃபோனை விட்டு வெளியேறாது.</string>
+    <string name="a11y_service_summary">*99# படிகளை PIN வரை உங்களுக்காக நிரப்புகிறது</string>
+
     <string name="cheat_title">இந்தப் படிகளைப் பின்பற்றுங்கள்</string>
     <string name="cheat_intro">உங்கள் டயலரில் *99# திறக்கும். இதைச் செய்யுங்கள்:</string>
     <string name="cheat_step_send">1. \"Send Money\" (பணம் அனுப்பு) தேர்வு செய்யவும்</string>

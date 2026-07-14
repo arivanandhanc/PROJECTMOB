@@ -19,8 +19,11 @@ stores no credentials, and **cannot go online** — it does not even request the
 - **The UPI PIN never enters the app.** You type it inside your carrier's secure
   `*99#` session. There is no PIN field anywhere in OruBar Pay.
 - **OS-enforced no-exfiltration.** With `INTERNET` omitted from the manifest,
-  Android itself blocks any network call. Verifiable in airplane mode.
-- **One permission: `CAMERA`.** No SMS, no `CALL_PHONE`, no phone-state reads.
+  Android itself blocks any network call. Verifiable in airplane mode — this holds
+  even in the optional auto-pay mode below.
+- **Manual flow needs only `CAMERA`.** No SMS, no phone-state reads. The optional
+  "Pay automatically" mode additionally uses `CALL_PHONE` + an accessibility
+  service, both user-granted and off by default — see [docs/AUTOMATION.md](docs/AUTOMATION.md).
 - **Malicious-QR defense.** Strict VPA validation, a large verified-name confirm
   screen, a name/handle mismatch warning, a ₹5,000 cap, and a first-seen cue.
 

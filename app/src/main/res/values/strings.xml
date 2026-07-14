@@ -54,6 +54,18 @@
     <string name="err_unsupported_currency">Only Indian Rupee (INR) payments are supported.</string>
     <string name="err_enter_valid_amount">Enter a valid amount between ₹1 and ₹5,000.</string>
 
+    <!-- Auto-pay -->
+    <string name="cheat_autopay_button">Pay automatically</string>
+    <string name="cheat_autopay_note">The app dials *99# and fills the steps for you. You enter only your UPI PIN.</string>
+    <string name="cheat_or_manual">Or do it step by step:</string>
+    <string name="autopay_call_denied">Without phone permission, use the manual steps below.</string>
+    <string name="autopay_need_a11y_title">Turn on auto-fill</string>
+    <string name="autopay_need_a11y_body">To fill the *99# steps for you, turn on \"OruBar Pay\" in Accessibility settings. It works only while you pay and never sees your UPI PIN.</string>
+    <string name="autopay_open_settings">Open settings</string>
+    <string name="autopay_starting">Dialing *99# and filling the steps… enter your UPI PIN when asked.</string>
+    <string name="a11y_service_desc">OruBar Pay uses this only while you pay: it selects Send Money, chooses UPI ID, and types the shop\'s UPI ID and amount into the *99# menu. It never touches your UPI PIN, and the app has no internet, so nothing leaves your phone.</string>
+    <string name="a11y_service_summary">Fills the *99# steps for you, up to the PIN</string>
+
     <!-- Cheat card -->
     <string name="cheat_title">Follow these steps</string>
     <string name="cheat_intro">Your dialer will open *99#. Do this:</string>

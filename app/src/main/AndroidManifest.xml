@@ -9,11 +9,24 @@
     -->
     <uses-permission android:name="android.permission.CAMERA" />
 
+    <!--
+      Optional "Pay automatically" mode (user opts in). CALL_PHONE lets the app
+      dial *99# itself; the accessibility service then fills the menu steps up to
+      the PIN. Both are user-granted. There is still NO INTERNET permission, so
+      nothing the app sees can leave the device.
+    -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
     <uses-feature
         android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <!-- CALL_PHONE implies telephony; mark it optional so Wi-Fi-only tablets can
+         still install and use the scan/manual flow. -->
+    <uses-feature
+        android:name="android.hardware.telephony"
         android:required="false" />
 
     <!--
@@ -70,6 +83,19 @@
         <activity
             android:name=".ui.HelpActivity"
             android:exported="false" />
+
+        <!-- Auto-fill the *99# menu up to the PIN. User-enabled in Settings. -->
+        <service
+            android:name=".service.UssdAutomatorService"
+            android:exported="false"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/ussd_automator_config" />
+        </service>
 
     </application>
 

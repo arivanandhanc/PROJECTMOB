@@ -50,6 +50,17 @@
     <string name="err_unsupported_currency">ಭಾರತೀಯ ರೂಪಾಯಿ (INR) ಪಾವತಿಗಳು ಮಾತ್ರ ಬೆಂಬಲಿತ.</string>
     <string name="err_enter_valid_amount">₹1 ರಿಂದ ₹5,000 ರ ನಡುವೆ ಸರಿಯಾದ ಮೊತ್ತ ನಮೂದಿಸಿ.</string>
 
+    <string name="cheat_autopay_button">ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಪಾವತಿಸಿ</string>
+    <string name="cheat_autopay_note">ಆ್ಯಪ್ *99# ಡಯಲ್ ಮಾಡಿ ಹಂತಗಳನ್ನು ತುಂಬುತ್ತದೆ. ನೀವು ನಿಮ್ಮ UPI PIN ಅನ್ನು ಮಾತ್ರ ನಮೂದಿಸುತ್ತೀರಿ.</string>
+    <string name="cheat_or_manual">ಅಥವಾ ಹಂತ ಹಂತವಾಗಿ ಮಾಡಿ:</string>
+    <string name="autopay_call_denied">ಫೋನ್ ಅನುಮತಿ ಇಲ್ಲದೆ, ಕೆಳಗಿನ ಹಂತಗಳನ್ನು ಬಳಸಿ.</string>
+    <string name="autopay_need_a11y_title">ಸ್ವಯಂ-ಭರ್ತಿ ಆನ್ ಮಾಡಿ</string>
+    <string name="autopay_need_a11y_body">*99# ಹಂತಗಳನ್ನು ತುಂಬಲು, Accessibility ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ \"OruBar Pay\" ಅನ್ನು ಆನ್ ಮಾಡಿ. ಇದು ಪಾವತಿಸುವಾಗ ಮಾತ್ರ ಕೆಲಸ ಮಾಡುತ್ತದೆ ಮತ್ತು ನಿಮ್ಮ UPI PIN ಅನ್ನು ಎಂದಿಗೂ ನೋಡುವುದಿಲ್ಲ.</string>
+    <string name="autopay_open_settings">ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ</string>
+    <string name="autopay_starting">*99# ಡಯಲ್ ಮಾಡಿ ಹಂತಗಳನ್ನು ತುಂಬುತ್ತಿದೆ… ಕೇಳಿದಾಗ ನಿಮ್ಮ UPI PIN ನಮೂದಿಸಿ.</string>
+    <string name="a11y_service_desc">OruBar Pay ಇದನ್ನು ಪಾವತಿಸುವಾಗ ಮಾತ್ರ ಬಳಸುತ್ತದೆ: ಇದು Send Money ಆಯ್ಕೆಮಾಡಿ, UPI ID ಆಯ್ಕೆಮಾಡಿ, ಅಂಗಡಿಯ UPI ID ಮತ್ತು ಮೊತ್ತವನ್ನು *99# ಮೆನುವಿನಲ್ಲಿ ಟೈಪ್ ಮಾಡುತ್ತದೆ. ಇದು ನಿಮ್ಮ UPI PIN ಅನ್ನು ಎಂದಿಗೂ ಮುಟ್ಟುವುದಿಲ್ಲ, ಆ್ಯಪ್‌ಗೆ ಇಂಟರ್‌ನೆಟ್ ಇಲ್ಲ, ಆದ್ದರಿಂದ ಏನೂ ನಿಮ್ಮ ಫೋನ್‌ನಿಂದ ಹೊರಹೋಗುವುದಿಲ್ಲ.</string>
+    <string name="a11y_service_summary">*99# ಹಂತಗಳನ್ನು PIN ವರೆಗೆ ನಿಮಗಾಗಿ ತುಂಬುತ್ತದೆ</string>
+
     <string name="cheat_title">ಈ ಹಂತಗಳನ್ನು ಅನುಸರಿಸಿ</string>
     <string name="cheat_intro">ನಿಮ್ಮ ಡಯಲರ್ *99# ತೆರೆಯುತ್ತದೆ. ಇದನ್ನು ಮಾಡಿ:</string>
     <string name="cheat_step_send">1. \"Send Money\" (ಹಣ ಕಳುಹಿಸಿ) ಆಯ್ಕೆಮಾಡಿ</string>

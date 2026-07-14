@@ -6,8 +6,8 @@ OruBar Pay's security model is *architectural*: there is almost nothing to attac
 
 | Claim | How to verify |
 |---|---|
-| Cannot access the network | Manifest has no `INTERNET` permission. App works identically in airplane mode. Dex scan finds no `http(s)://` endpoint strings (only `schemas.android.com` XML namespaces). |
-| Only asks for Camera | `aapt dump permissions` shows `android.permission.CAMERA` as the only user-facing permission. |
+| Cannot access the network | Manifest has no `INTERNET` permission. App works identically in airplane mode. Dex scan finds no `http(s)://` endpoint strings (only `schemas.android.com` XML namespaces). **This holds even in auto-pay mode** — the accessibility service can read the screen but has nowhere to send anything. |
+| Manual flow asks only for Camera | `aapt dump permissions` shows `CAMERA` (plus the AndroidX signature self-permission below). `CALL_PHONE` is declared for the optional auto-pay mode but only used after the user grants it. |
 | Never sees the UPI PIN | There is no PIN input field anywhere in the code. PIN is entered inside the carrier's `*99#` session. |
 | History never leaves the phone | `TxnLog` writes a private JSON file, excluded from cloud backup via `backup_rules.xml` / `data_extraction_rules.xml`. |
 
@@ -34,6 +34,20 @@ The merged manifest contains one extra entry:
 
 It is intentionally left in place: removing it could cause a `SecurityException`
 if an AndroidX component registers a guarded receiver at runtime.
+
+## Auto-pay mode (opt-in)
+
+"Pay automatically" adds `CALL_PHONE` + an accessibility service so the app can
+dial `*99#` and fill the menu up to the PIN. Safety is preserved by design:
+
+- The service is **inert unless a payment is in progress** and self-cancels after
+  90s or at the PIN step.
+- It **never fills or reads a PIN** — it stops the instant a prompt mentions one.
+- With **no `INTERNET` permission**, screen content it sees cannot be exfiltrated.
+- The **manual, CAMERA-only flow remains the default** and Play-safe path.
+
+See `docs/AUTOMATION.md` for the full trade-offs (incl. the Play accessibility
+policy note and why it must be field-tested on a real SIM).
 
 ## Malicious-QR defense (the one real threat)
 
